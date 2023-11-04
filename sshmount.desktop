@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=sshmount
+Comment=Mount SSH File System
+Exec=/usr/local/bin/sshmount
+Icon=/usr/local/sshmount/sshmount.svg
+Terminal=false
+Type=Application
+Categories=Internet;
