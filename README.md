@@ -88,6 +88,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Salomão Domingos - salomaodomingos@gmail.com
 
-Project Link: [https://github.com/salomaodomingos/sshmount](https://github.com/salomaodomingos/sshmount)
+Project Link: [https://github.com/projetos/sshmount](https://github.com/projetos/sshmount.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
