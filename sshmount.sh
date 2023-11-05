@@ -172,7 +172,7 @@ ssh_mount() {
     notify-send "This file system already mounted!"
     return 1;
   else
-    if ! sshfs -o password_stdin $TMP_USER@$TARGET_HOST:/home/$TMP_USER $MOUNT_POINT_FOLDER <<< $TMP_PASS 1> /dev/null 2>$LOG_FILE; then
+    if ! sshfs -o ServerAliveInterval=15 -o reconnect -o StrictHostKeyChecking=accept-new -o password_stdin $TMP_USER@$TARGET_HOST:/home/$TMP_USER $MOUNT_POINT_FOLDER <<< $TMP_PASS 1> /dev/null 2>$LOG_FILE; then
       zenity --width=450 --height=300 --modal --text-info \
         --title="SSH Mount - [ mount - Error ]" \
         --filename=$LOG_FILE;
